@@ -87,6 +87,11 @@ export default [
     // params, such as `resource` to define what wasn't found.
     props: true,
   },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: () => lazyLoadView(import('@views/checkout.vue')),
+  },
   // Redirect any unmatched routes to the 404 page. This may
   // require some server configuration to work in production:
   // https://router.vuejs.org/en/essentials/history-mode.html#example-server-configurations

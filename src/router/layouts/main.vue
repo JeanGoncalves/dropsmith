@@ -3,12 +3,18 @@ import NavBar from '@components/nav-bar.vue'
 
 export default {
   components: { NavBar },
+  props: {
+    hasNavbar: {
+      type: String,
+      default: 'true',
+    },
+  },
 }
 </script>
 
 <template>
   <div :class="$style.container">
-    <NavBar />
+    <NavBar v-if="hasNavbar" />
     <slot />
   </div>
 </template>
