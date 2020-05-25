@@ -1,8 +1,8 @@
 <script>
-import NavBar from '@components/nav-bar.vue'
+// import NavBar from '@components/nav-bar.vue'
 
 export default {
-  components: { NavBar },
+  // components: { NavBar },
   props: {
     hasNavbar: {
       type: String,
@@ -14,7 +14,7 @@ export default {
 
 <template>
   <div :class="$style.container">
-    <NavBar v-if="hasNavbar" />
+    <!-- <NavBar v-if="hasNavbar" /> -->
     <slot />
   </div>
 </template>
